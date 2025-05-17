@@ -41,7 +41,7 @@ function App() {
       formData.append('file', file);
       formData.append('num_images', numImages.toString());
       formData.append('class_name', className);
-      const response = await axios.post('http://173.208.243.172:5100/augment/', formData, {
+      const response = await axios.post('https://www.aiocr.go-ai.one/yolo-api', formData, {
         responseType: 'blob',
         headers: {
           'Content-Type': 'multipart/form-data'
